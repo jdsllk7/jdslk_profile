@@ -4,26 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Zoom Out - Startup</title>
+  <title>Home | Jdslk</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/startup-materialize.min.css">
-  <link rel="icon" type="image/gif" href="images/logo2.png">
+  <link rel="icon" type="image/gif" href="images/icons/logo1.png">
 
   <!-- Material Icons -->
   <link href="materialize/materials_icons/css/material-icons.css" rel="stylesheet" />
-
-  <style>
-    video {
-      min-width: 100%;
-      min-height: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  </style>
+  <link href="css/styles.css" rel="stylesheet" />
 
 </head>
 
@@ -32,44 +22,84 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo"><img style="width:70px;height:70px;" src="images/logo2.png" alt=""></a>
+      <a href="index.html" class="brand-logo"><img style="width:70px;height:70px;" src="images/icons/logo1.png"
+          alt=""></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="docs/about.html">Docs</a></li>
-        <li><a href="#">Buy Now!</a></li>
+        <li class="active"><a class="white-text" href="index.html">Home</a></li>
+        <li><a class="white-text" href="team.html">Our Team</a></li>
+        <li><a class="white-text modal-trigger" href="#contact">Contact us</a></li>
       </ul>
 
       <a href="#" data-activates="slide-out" class="button-collapse right">
-        <i class="material-icons white-text">menu</i></a>
+        <i class="material-icons white-text" style="text-shadow: 2px 2px 4px #000000;">menu</i></a>
     </div>
   </nav>
   <ul id="slide-out" class="side-nav">
     <li class="active"><a class="waves-effect waves-teal" href="index.html">Home</a></li>
-    <li><a class="waves-effect waves-teal" href="blog.html">Blog</a></li>
-    <li><a class="waves-effect waves-teal" href="team.html">Team</a></li>
-    <li><a class="waves-effect waves-teal" href="docs/about.html">Docs</a></li>
-    <li><a class="waves-effect waves-teal" href="#">Buy Now!</a></li>
+    <li><a class="waves-effect waves-teal" href="team.html">Our Team</a></li>
+    <li><a class="waves-effect waves-teal modal-trigger" href="#contact">Contact us</a></li>
   </ul>
+
 
   <div class="zoom-out-intro header full-height grey darken-4">
     <div class="header-wrapper row valign-wrapper">
       <div class="col s8 offset-s2 valign white-text">
-        <h1 style="font-family: Aldhabi;">JD-SilK</h1>
-        <h4>Advancement through Technology</h4>
+        <h1 style="font-family: Aldhabi;">JDSlK</h1>
+        <h4>Automating life through Technology</h4>
         <button class="read-more"><i class="icon-caret-down white-text"></i></button>
       </div>
     </div>
     <div class="laptop-preview-sizer">
       <div class="laptop-preview"></div>
 
-      <div class="image-container default" style="overflow:hidden;">
-        <video autoplay muted loop>
-          <source no-controls src="images/anime_wallpaper/v7.mp4" type="video/mp4">
-        </video>
+      <div class="image-container background_anime default" style="overflow:hidden;">
+        <!-- <video autoplay muted loop>
+          <source no-controls src="images/anime_wallpaper/v4.mp4" type="video/mp4">
+        </video> -->
       </div>
 
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal Contact -->
+  <div id="contact" class="modal background_anime1">
+    <div class="modal-content">
+      <br>
+      <h4 class="grey-text text-darken-2 center">Get in touch with us</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col m10 offset-m1 s12">
+            <div class="row">
+              <form class="col m8 offset-m2 s12" autocomplete="on">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input style="border-bottom: 1px solid #9e9e9e;" id="name" type="text" class="black-text validate"
+                      required>
+                    <label class="grey-text" for="name">Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input style="border-bottom: 1px solid #9e9e9e;" id="email" type="email" class="black-text validate"
+                      required>
+                    <label class="grey-text" for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea style="border-bottom: 1px solid #9e9e9e;" id="message"
+                      class="materialize-textarea black-text validate" required></textarea>
+                    <label class="grey-text" for="message">Message</label>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button style="border: 2px solid #9e9e9e;" type="submit"
+                    class="waves-effect waves-blue btn-flat">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -228,42 +258,55 @@
   <h1 class="center grey darken-4" style="margin: 0;padding-bottom: 30px;">Our Projects</h1>
   <div class="header full-height horizontal-half-transition grey darken-4">
 
-    <div class="background">
+    <div class="background grey darken-4">
     </div>
     <div class="phone-preview-sizer">
       <div class="phone-preview"></div>
-      <div class="image-container active" style="background-image:url(images/app_cover_2.png)"></div>
-      <div class="image-container" style="background-image:url(images/app_cover_1.png)"></div>
-      <div class="image-container" style="background-image:url(images/nyumba.png)"></div>
+
+      <div class="image-container active hide-on-small-only" style="background-image:url(images/app_cover_2.png)"></div>
+      <div class="image-container hide-on-small-only" style="background-image:url(images/app_cover_1.png)"></div>
+      <div class="image-container hide-on-small-only" style="background-image:url(images/nyumba.png)"></div>
+      <div class="image-container hide-on-small-only background_anime1"></div>
     </div>
     <div class="horizontal-half-wrapper right-side active">
-      <div class="header-background white"></div>
+      <div class="header-background white background_anime1"></div>
       <div class="header-wrapper row valign-wrapper">
         <div class="col s12 m8 offset-m2 valign">
           <h3 class="light-blue-text darken-4">Accident Detection<br>&<br>Emergency Response System</h3>
-          <span class="tagline">We've developed a system that can detect an vehicle accident and, in real-time, alert
-            the closest medical personnel to locate you.</span>
+          <span class="tagline">We've developed a system that can detect a vehicle accident and, in real-time, alert
+            the closest medical personnel to locate the crash-site via google-maps and respond.</span>
           <button class="read-more"><i class="icon-caret-down light-blue-text darken-4"></i></button>
         </div>
       </div>
     </div>
     <div class="horizontal-half-wrapper">
-      <div class="header-background white"></div>
+      <div class="header-background white background_anime1"></div>
       <div class="header-wrapper row valign-wrapper">
         <div class="col s12 m8 offset-m2 valign">
-          <h3 class="light-blue-text darken-4">Remote-Health</h3>
-          <span class="tagline">Picture a geographically decentralized healthcare center able to attend to several
+          <h3 class="light-blue-text darken-4">Tele-Health</h3>
+          <span class="tagline">Picture a geographically decentralized healthcare system that is able to attend to
+            several
             medical needs with easy & efficiency.</span>
           <button class="read-more"><i class="icon-caret-down light-blue-text darken-4"></i></button>
         </div>
       </div>
     </div>
     <div class="horizontal-half-wrapper right-side">
-      <div class="header-background white"></div>
+      <div class="header-background white background_anime1"></div>
       <div class="header-wrapper row valign-wrapper">
         <div class="col s12 m8 offset-m2 valign">
-          <h3 class="light-blue-text darken-4">Real-Estate Advertisement</h3>
+          <h3 class="light-blue-text darken-4">Nyumba Real-Estate Advertisement</h3>
           <span class="tagline">Advertising real-estate is just a click away.</span>
+          <button class="read-more"><i class="icon-caret-down light-blue-text darken-4"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="horizontal-half-wrapper">
+      <div class="header-background white background_anime1"></div>
+      <div class="header-wrapper row valign-wrapper">
+        <div class="col s12 m8 offset-m2 valign">
+          <h3 class="light-blue-text darken-4">You're Project</h3>
+          <span class="tagline">May be next...</span>
           <button class="read-more"><i class="icon-caret-down light-blue-text darken-4"></i></button>
         </div>
       </div>
