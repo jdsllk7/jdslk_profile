@@ -38,5 +38,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alan Chang"
+  "author": "Alan Chang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdsllk7/jdslk_profile.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdsllk7/jdslk_profile/issues"
+  },
+  "homepage": "https://github.com/jdsllk7/jdslk_profile#readme"
 }
